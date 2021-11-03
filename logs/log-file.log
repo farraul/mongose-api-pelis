@@ -519,3 +519,10 @@
 {"level":"info","message":"::1 - - [03/Nov/2021:12:25:05 +0000] \"POST /api/signup HTTP/1.1\" 200 681 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T12:25:05.886Z"}
 {"level":"info","message":"::1 - - [03/Nov/2021:12:25:09 +0000] \"POST /api/signin HTTP/1.1\" 200 711 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T12:25:09.201Z"}
 {"level":"info","message":"::1 - - [03/Nov/2021:12:25:10 +0000] \"POST /api/signin HTTP/1.1\" 200 711 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T12:25:10.907Z"}
+{"level":"info","message":"::1 - - [03/Nov/2021:12:38:09 +0000] \"POST /api/signup HTTP/1.1\" 200 681 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T12:38:09.505Z"}
+{"level":"info","message":"::1 - - [03/Nov/2021:12:38:26 +0000] \"POST /api/signin HTTP/1.1\" 200 715 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T12:38:26.576Z"}
+{"level":"info","message":"::1 - - [03/Nov/2021:12:47:52 +0000] \"POST /api/signup HTTP/1.1\" 200 681 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T12:47:52.054Z"}
+{"level":"info","message":"::1 - - [03/Nov/2021:15:05:12 +0000] \"POST /api/signup HTTP/1.1\" 200 681 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T15:05:12.421Z"}
+{"level":"info","message":"::1 - - [03/Nov/2021:15:05:18 +0000] \"POST /api/signin HTTP/1.1\" 200 715 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T15:05:18.285Z"}
+{"level":"info","message":"::1 - - [03/Nov/2021:15:06:34 +0000] \"POST /api/signup HTTP/1.1\" 200 684 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T15:06:34.118Z"}
+{"level":"info","message":"::1 - - [03/Nov/2021:15:09:20 +0000] \"POST /api/signup HTTP/1.1\" 200 684 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T15:09:20.173Z"}
