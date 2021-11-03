@@ -516,3 +516,6 @@
 {"level":"info","message":"::1 - - [03/Nov/2021:12:21:30 +0000] \"POST /api/signin HTTP/1.1\" 200 711 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T12:21:30.307Z"}
 {"level":"info","message":"::1 - - [03/Nov/2021:12:22:21 +0000] \"POST /api/signin HTTP/1.1\" 200 711 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T12:22:21.390Z"}
 {"level":"info","message":"::1 - - [03/Nov/2021:12:22:24 +0000] \"POST /api/signup HTTP/1.1\" 200 681 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T12:22:24.249Z"}
+{"level":"info","message":"::1 - - [03/Nov/2021:12:25:05 +0000] \"POST /api/signup HTTP/1.1\" 200 681 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T12:25:05.886Z"}
+{"level":"info","message":"::1 - - [03/Nov/2021:12:25:09 +0000] \"POST /api/signin HTTP/1.1\" 200 711 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T12:25:09.201Z"}
+{"level":"info","message":"::1 - - [03/Nov/2021:12:25:10 +0000] \"POST /api/signin HTTP/1.1\" 200 711 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T12:25:10.907Z"}
