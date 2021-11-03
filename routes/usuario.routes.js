@@ -10,6 +10,12 @@ router.get("/:id", usuarios.findOne); // Retrieve a single category with id
 router.put("/:id", usuarios.update); // Update a category with id
 router.delete("/:id", usuarios.delete); // Delete a category with id
 router.delete("/", usuarios.deleteAll); // Create a new category
+
+// Dos rutas: login y registro
+// /api/singin & /api/singup
+router.post('/signin', usuarios.signIn);
+router.post('/signup', usuarios.signUp);
+
   
 
 module.exports = router;
