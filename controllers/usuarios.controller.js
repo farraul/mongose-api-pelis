@@ -4,6 +4,13 @@ const Usuario = db.usuarios;
 const UsuarioController = {}; //Create the object controller
 
 
+const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
+const authConfig = require('../config/auth');
+
+
+
+
 //CRUD end-points Functions
 //-------------------------------------------------------------------------------------
 // Create and Save a new Category
@@ -145,41 +152,69 @@ UsuarioController.deleteAll = (req, res) => {
     });
 };
 
-
+//------------------ crear Usuario//
 
 UsuarioController.signUp = (req, res) => {
-  if (req.user.usuario.rol == "admin") {//COMPROBAMOS SI ESTÁ LOGADO COMO ADMINISTRADOR
-        let clave = req.body.clave;
-        if (clave.length >= 8) {//SE ENCRIPTA LA CONTRASEÑA SI MÍNIMO TIENE 8 CARACTERES
-          var contrasena = bcrypt.hashSync(req.body.contrasena, Number.parseInt(authConfig.rounds));  
-          usuario.create({
-              nombre: req.body.nombre,
-              email: req.body.email,
-              contrasena: contrasena,
-              rol: req.body.email
-          }).then(usuario => {
-              let token = jwt.sign({ usuario: usuario }, authConfig.secret, {
-                  expiresIn: authConfig.expires
-              });
-              res.json({
-                  usuario: usuario,
-                  token: token
-              });
-          }).catch(err => {
-              res.status(500).json(err);
-          });
-        }else{
-          res.send({
-            message: `La contraseña tiene que tener un mínimo de 8 caracteres. ${clave}`
-        });
-        }
-  }else{
-    res.send({
-      message: `No tienes permisos para registrar usuarios. Contacta con un administrador.`
+  
+// Encriptamos la contraseña
+let contrasenanew = bcrypt.hashSync(req.body.password, Number.parseInt(authConfig.rounds));
+
+// Crear un usuario
+Usuario.create({
+  nombre: req.body.nombre,
+  email: req.body.email,
+  password: contrasenanew,
+}).then(user => {
+
+    // Creamos el token
+    let token = jwt.sign({ user: user }, authConfig.secret, {
+        expiresIn: authConfig.expires
     });
-  }
+
+    res.json({
+        user: user,
+        token: token
+    });
+
+}).catch(err => {
+    res.status(500).json(err);
+});
+
 };
 
+
+//-------------------------------------------------------------------------------------
+//Login Usuario with database
+//get Usuario
+UsuarioController.signIn = (req, res) =>{
+  let { email, password } = req.body;
+  // Buscar usuario
+  Usuario.findOne({ email: email }
+  ).then(Usuario => {
+      if (!Usuario) {
+          res.status(404).json({ msg: "Usuario con este correo no encontrado" });
+      } else {
+          if (bcrypt.compareSync(password, Usuario.password)) {
+              // Creamos el token
+              let token = jwt.sign({ Usuario: Usuario }, authConfig.secret, {
+                  expiresIn: authConfig.expires
+              });
+
+              res.json({
+                  texto:"Te has conectado",
+                  Usuario: Usuario,
+                  token: token
+              
+              })
+          } else {
+              // Unauthorized Access
+              res.status(401).json({ msg: "Contraseña incorrecta" })
+          }
+      }
+  }).catch(err => {
+      res.status(500).json(err);
+  })
+};
 
 
 
