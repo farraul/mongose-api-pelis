@@ -51,10 +51,10 @@ Gestión de datos:
 Sequelize o MongoDB a escoger.
 
 Postman:
+![image](https://user-images.githubusercontent.com/28491001/140098817-52c5a13d-686e-4815-9789-bff3de027ecd.png)
+![image](https://user-images.githubusercontent.com/28491001/140098887-d6319e23-5969-4405-bd18-110d1a0de7ce.png)
 
-![imggg](https://user-images.githubusercontent.com/28491001/139271234-0bdc5009-28fa-44de-9d17-34e819456a34.png)
-![image](https://user-images.githubusercontent.com/28491001/139293981-37f48d33-99cb-40f1-8a65-92feeabb9798.png)
-![image](https://user-images.githubusercontent.com/28491001/139294416-04d83071-37f7-4047-a5e0-930b975395f4.png)
+
 
 
 
