@@ -161,7 +161,7 @@ let contrasenanew = bcrypt.hashSync(req.body.password, Number.parseInt(authConfi
 
 // Crear un usuario
 Usuario.create({
-  nombre: req.body.nombre,
+  name: req.body.nombre,
   email: req.body.email,
   password: contrasenanew,
 }).then(user => {

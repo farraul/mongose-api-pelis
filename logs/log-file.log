@@ -526,3 +526,21 @@
 {"level":"info","message":"::1 - - [03/Nov/2021:15:05:18 +0000] \"POST /api/signin HTTP/1.1\" 200 715 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T15:05:18.285Z"}
 {"level":"info","message":"::1 - - [03/Nov/2021:15:06:34 +0000] \"POST /api/signup HTTP/1.1\" 200 684 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T15:06:34.118Z"}
 {"level":"info","message":"::1 - - [03/Nov/2021:15:09:20 +0000] \"POST /api/signup HTTP/1.1\" 200 684 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T15:09:20.173Z"}
+{"level":"info","message":"::1 - - [03/Nov/2021:15:36:47 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T15:36:47.991Z"}
+{"level":"info","message":"::1 - - [03/Nov/2021:15:36:51 +0000] \"GET /movies HTTP/1.1\" 404 145 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T15:36:51.797Z"}
+{"level":"info","message":"::1 - - [03/Nov/2021:15:37:13 +0000] \"GET /pelicula HTTP/1.1\" 401 30 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T15:37:13.577Z"}
+{"level":"info","message":"::1 - - [03/Nov/2021:15:38:04 +0000] \"DELETE /trabajadores/api/signin HTTP/1.1\" 404 165 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T15:38:04.812Z"}
+{"level":"info","message":"::1 - - [03/Nov/2021:15:38:13 +0000] \"DELETE /trabajadores/signin HTTP/1.1\" 404 161 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T15:38:13.782Z"}
+{"level":"info","message":"::1 - - [03/Nov/2021:15:38:23 +0000] \"POST /trabajadores/signin HTTP/1.1\" 404 159 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T15:38:23.062Z"}
+{"level":"info","message":"::1 - - [03/Nov/2021:15:38:29 +0000] \"POST /trabajadores/api/signin HTTP/1.1\" 404 163 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T15:38:29.333Z"}
+{"level":"info","message":"::1 - - [03/Nov/2021:15:38:52 +0000] \"POST /trabajadores/api/signup HTTP/1.1\" 404 163 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T15:38:52.827Z"}
+{"level":"info","message":"::1 - - [03/Nov/2021:15:39:48 +0000] \"POST /trabajadores/api/signup HTTP/1.1\" 404 163 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T15:39:48.018Z"}
+{"level":"info","message":"::1 - - [03/Nov/2021:15:41:10 +0000] \"POST /trabajadores/api/signup HTTP/1.1\" 404 163 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T15:41:10.323Z"}
+{"level":"info","message":"::1 - - [03/Nov/2021:15:41:50 +0000] \"POST /trabajadores/api/signup HTTP/1.1\" 404 163 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T15:41:50.155Z"}
+{"level":"info","message":"::1 - - [03/Nov/2021:15:42:21 +0000] \"POST /trabajadores/api/signup HTTP/1.1\" 404 163 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T15:42:21.266Z"}
+{"level":"info","message":"::1 - - [03/Nov/2021:15:44:18 +0000] \"POST /trabajadores/api/signup HTTP/1.1\" 404 163 \"-\" \"PostmanRuntime/7.28.4\"\n","timestamp":"2021-11-03T15:44:18.996Z"}
+{"level":"info","message":"::1 - - [05/Nov/2021:14:34:59 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36\"\n","timestamp":"2021-11-05T14:34:59.720Z"}
+{"level":"info","message":"::1 - - [05/Nov/2021:17:24:37 +0000] \"GET /register HTTP/1.1\" 404 147 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36\"\n","timestamp":"2021-11-05T17:24:37.408Z"}
+{"level":"info","message":"::1 - - [05/Nov/2021:17:24:40 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36\"\n","timestamp":"2021-11-05T17:24:40.110Z"}
+{"level":"info","message":"::1 - - [05/Nov/2021:17:24:40 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36\"\n","timestamp":"2021-11-05T17:24:40.412Z"}
+{"level":"info","message":"::1 - - [05/Nov/2021:17:25:08 +0000] \"GET /api/signup HTTP/1.1\" 500 54 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36\"\n","timestamp":"2021-11-05T17:25:08.878Z"}
