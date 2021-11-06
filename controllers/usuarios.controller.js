@@ -88,14 +88,14 @@ UsuarioController.findOne = (req, res) => {
 UsuarioController.update = (req, res) => {
   res.send("entre")
  
- /* if (!req.body) {
+  if (!req.body) {
     return res.status(400).send({
       message: "Data to update can not be empty!"
     });
   }
 
 //  const id = req.params.id;
-const id = req.body.email;
+const email = req.body.email;
 
 //Usuario.findByIdAndUpdate(id, req.body, { useFindAndModify: false })
  Usuario.findByIdAndUpdate(email, req.body, { useFindAndModify: false })
@@ -113,7 +113,7 @@ const id = req.body.email;
         //message: "Error updating Category with id=" + id
         message: "Error updating Category with id=" +email
       });
-    });*/
+    });
 };
 
 
