@@ -86,7 +86,8 @@ UsuarioController.findOne = (req, res) => {
 //-------------------------------------------------------------------------------------
 // Update a Category by the id in the request
 UsuarioController.update = (req, res) => {
-  console.log("entre");
+  res.send("entre")
+ 
  /* if (!req.body) {
     return res.status(400).send({
       message: "Data to update can not be empty!"
