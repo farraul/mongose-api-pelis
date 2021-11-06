@@ -204,7 +204,7 @@ UsuarioController.signIn = (req, res) =>{
 
               res.json({
                   texto:"Te has conectado",
-                  Usuario: Usuario,
+                  user: Usuario,
                   token: token
               
               })
