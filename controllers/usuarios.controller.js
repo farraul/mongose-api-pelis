@@ -86,32 +86,23 @@ UsuarioController.findOne = (req, res) => {
 //-------------------------------------------------------------------------------------
 // Update a Category by the id in the request
 UsuarioController.update = (req, res) => {
-  //res.send("entre73")
- 
   if (!req.body) {
     return res.status(400).send({
       message: "Data to update can not be empty!"
     });
   }
-
-//  const id = req.params.id;
-const id = req.body._id;
-
-//Usuario.findByIdAndUpdate(id, req.body, { useFindAndModify: false })
- Usuario.findIdAndUpdate(id, req.body, { useFindAndModify: false })
+  const id = req.params.id;
+ Usuario.findByIdAndUpdate(id, req.body, { useFindAndModify: false })
     .then(data => {
       if (!data) {
         res.status(404).send({
-          //message: `Cannot update Category with id=${id}. Maybe Category was not found!`
           message: `Cannot update Category with id=${id}. Maybe Category was not found!`
         });
       } else res.send({ message: "Category was updated successfully." });
     })
     .catch(err => {
-      console.log("entra al cath");
       res.status(500).send({
-        //message: "Error updating Category with id=" + id
-        message: "Error updating Category with id=" +id
+        message: "Error updating Category with id=" + id
       });
     });
 };
