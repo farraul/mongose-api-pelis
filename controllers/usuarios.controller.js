@@ -92,19 +92,23 @@ UsuarioController.update = (req, res) => {
     });
   }
 
-  const id = req.params.id;
+//  const id = req.params.id;
+const id = req.body.email;
 
- Usuario.findByIdAndUpdate(id, req.body, { useFindAndModify: false })
+//Usuario.findByIdAndUpdate(id, req.body, { useFindAndModify: false })
+ Usuario.findByIdAndUpdate(email, req.body, { useFindAndModify: false })
     .then(data => {
       if (!data) {
         res.status(404).send({
-          message: `Cannot update Category with id=${id}. Maybe Category was not found!`
+          //message: `Cannot update Category with id=${id}. Maybe Category was not found!`
+          message: `Cannot update Category with id=${email}. Maybe Category was not found!`
         });
       } else res.send({ message: "Category was updated successfully." });
     })
     .catch(err => {
       res.status(500).send({
-        message: "Error updating Category with id=" + id
+        //message: "Error updating Category with id=" + id
+        message: "Error updating Category with id=" +email
       });
     });
 };
