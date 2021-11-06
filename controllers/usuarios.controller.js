@@ -87,7 +87,7 @@ UsuarioController.findOne = (req, res) => {
 // Update a Category by the id in the request
 UsuarioController.update = (req, res) => {
   res.send("entre3")
- /*
+ 
   if (!req.body) {
     return res.status(400).send({
       message: "Data to update can not be empty!"
@@ -113,7 +113,7 @@ const id = req.body.email;
         //message: "Error updating Category with id=" + id
         message: "Error updating Category with id=" +id
       });
-    });*/
+    });
 };
 
 
