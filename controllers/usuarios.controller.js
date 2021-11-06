@@ -103,7 +103,7 @@ const id = req.body.email;
       if (!data) {
         res.status(404).send({
           //message: `Cannot update Category with id=${id}. Maybe Category was not found!`
-          message: `Cannot update Category with id=${email}. Maybe Category was not found!`
+          message: `Cannot update Category with id=${id}. Maybe Category was not found!`
         });
       } else res.send({ message: "Category was updated successfully." });
     })
@@ -111,7 +111,7 @@ const id = req.body.email;
       console.log("entra al cath");
       res.status(500).send({
         //message: "Error updating Category with id=" + id
-        message: "Error updating Category with id=" +email
+        message: "Error updating Category with id=" +id
       });
     });
 };
