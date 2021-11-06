@@ -95,7 +95,7 @@ UsuarioController.update = (req, res) => {
   }
 
 //  const id = req.params.id;
-const id = req.body.id;
+const id = req.body._id;
 
 //Usuario.findByIdAndUpdate(id, req.body, { useFindAndModify: false })
  Usuario.findIdAndUpdate(id, req.body, { useFindAndModify: false })
