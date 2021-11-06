@@ -107,6 +107,7 @@ const id = req.body.email;
       } else res.send({ message: "Category was updated successfully." });
     })
     .catch(err => {
+      console.log("entra al cath");
       res.status(500).send({
         //message: "Error updating Category with id=" + id
         message: "Error updating Category with id=" +email
