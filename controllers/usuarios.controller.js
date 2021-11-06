@@ -86,7 +86,7 @@ UsuarioController.findOne = (req, res) => {
 //-------------------------------------------------------------------------------------
 // Update a Category by the id in the request
 UsuarioController.update = (req, res) => {
-  res.send("entre")
+  res.send("entre3")
  
   if (!req.body) {
     return res.status(400).send({
