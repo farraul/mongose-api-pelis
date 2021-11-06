@@ -98,7 +98,7 @@ UsuarioController.update = (req, res) => {
 const email = req.body.email;
 
 //Usuario.findByIdAndUpdate(id, req.body, { useFindAndModify: false })
- Usuario.findByIdAndUpdate(email, req.body, { useFindAndModify: false })
+ Usuario.findByEmailAndUpdate(email, req.body, { useFindAndModify: false })
     .then(data => {
       if (!data) {
         res.status(404).send({
