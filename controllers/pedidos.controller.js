@@ -18,8 +18,9 @@ PedidoController.create = (req, res) => {
   const pedido = new Pedido({
     nombre_cliente: req.body.nombre_cliente,
     email_cliente: req.body.email_cliente,
-    id_film: req.body.id_film,
+    id_cliente: req.body._idcliente,
     name_film: req.body.name_film,
+    id_film: req.body.id_film,
     name_original_film: req.body.name_original_film,
     fecha_recogida: req.body.fecha_recogida,
    
