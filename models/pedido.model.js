@@ -5,8 +5,12 @@ module.exports = mongoose => {
         {
           nombre_cliente: String,
           email_cliente: String,
+          id_film: String,
+          name_film: String,
+          name_original_film: String,
           fecha_recogida: String,
           fecha_entrega: String
+
 
         },
         { timestamps: true }

@@ -1,3 +1,4 @@
+const { red } = require("colors");
 const db = require("../models");
 const Pedido = db.pedidos;
 
@@ -17,6 +18,9 @@ PedidoController.create = (req, res) => {
   const pedido = new Pedido({
     nombre_cliente: req.body.nombre_cliente,
     email_cliente: req.body.email_cliente,
+    id_film: req.body.id_film,
+    name_film: req.body.name_film,
+    name_original_film: req.body.name_original_film,
     fecha_recogida: req.body.fecha_recogida,
     fecha_entrega: req.body.fecha_entrega,
 
