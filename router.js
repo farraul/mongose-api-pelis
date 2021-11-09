@@ -11,7 +11,7 @@ const UsuarioRouter = require('./routes/usuario.routes');
 
 //Rutas
 router.use('/pelicula', auth,  PeliculaRouter);
-router.use('/pedido', auth, PedidoRouter);
+router.use('/pedido', PedidoRouter);
 router.use('/usuario', UsuarioRouter);
 router.use('/api', UsuarioRouter); 
 
