@@ -22,7 +22,7 @@ PedidoController.create = (req, res) => {
     name_film: req.body.name_film,
     name_original_film: req.body.name_original_film,
     fecha_recogida: req.body.fecha_recogida,
-    fecha_entrega: req.body.fecha_entrega,
+   
 
 
   });

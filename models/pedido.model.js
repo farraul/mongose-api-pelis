@@ -8,8 +8,8 @@ module.exports = mongoose => {
           id_film: String,
           name_film: String,
           name_original_film: String,
-          fecha_recogida: String,
-          fecha_entrega: String
+          fecha_recogida: String
+      
 
 
         },
