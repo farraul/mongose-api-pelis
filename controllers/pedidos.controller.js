@@ -15,8 +15,8 @@ PedidoController.create = (req, res) => {
 
   // Create a Pedido
   const pedido = new Pedido({
-    numero: req.body.numero,
-    dependiente: req.body.dependiente,
+    nombre_cliente: req.body.nombre_cliente,
+    email_cliente: req.body.email_cliente,
     fecha_recogida: req.body.fecha_recogida,
     fecha_entrega: req.body.fecha_entrega,
 

@@ -3,10 +3,11 @@ module.exports = mongoose => {
       "pedidos",
       mongoose.Schema(
         {
-          numero: String,
-          dependiente: String,
+          nombre_cliente: String,
+          email_cliente: String,
           fecha_recogida: String,
           fecha_entrega: String
+
         },
         { timestamps: true }
       )
