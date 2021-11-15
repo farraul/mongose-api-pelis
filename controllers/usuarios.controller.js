@@ -166,6 +166,7 @@ Usuario.create({
   email: req.body.email,
   password: contrasenanew,
   telf: req.body.telf,
+  rol: "user",
 }).then(user => {
 
     // Creamos el token
